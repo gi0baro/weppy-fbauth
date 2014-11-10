@@ -17,7 +17,6 @@ class FBAuth(Oauth2):
         self.config.auth_url = self.auth_url
         self.config.token_url = self.token_url
         Oauth2.load(self, auth)
-        self.graph = None
 
     def _add_action(self):
         self.auth.register_action('facebook', self.fb)
@@ -27,6 +26,8 @@ class FBAuth(Oauth2):
 
 
 class FBHandler(LoginHandler):
+    graph = None
+
     def get_user(self):
         if not self.accessToken():
             return None
