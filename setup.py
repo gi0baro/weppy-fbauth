@@ -3,8 +3,8 @@
 weppy-FBAuth
 ------------
 
-This extension provides a simple interface to add
-facebook login in your weppy application.
+This extension provides a simple interface to add facebook login in your
+weppy application.
 """
 
 from setuptools import setup
@@ -12,12 +12,12 @@ from setuptools import setup
 setup(
     name='weppy-FBAuth',
     version='0.1',
-    url='',
+    url='https://github.com/gi0baro/weppy-fbauth',
     license='BSD',
     author='Giovanni Barillari',
     author_email='gi0baro@d4net.org',
     description='Oauth2 login interface for weppy',
-    #long_description=__doc__,
+    long_description=__doc__,
     packages=['weppy_fbauth'],
     install_requires=['weppy', 'weppy_oauth2', 'facepy'],
     zip_safe=False,
