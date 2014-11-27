@@ -16,7 +16,7 @@ setup(
     license='BSD',
     author='Giovanni Barillari',
     author_email='gi0baro@d4net.org',
-    description='Oauth2 login interface for weppy',
+    description='Facebook login interface for weppy',
     long_description=__doc__,
     packages=['weppy_fbauth'],
     install_requires=['weppy', 'weppy_oauth2', 'facepy'],
